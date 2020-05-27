@@ -26,11 +26,26 @@
     {% endfor %}
 
     <!--<a class="sidebar-nav-item" href="{{ site.github.repo }}/archive/v{{ site.version }}.zip">Download</a>-->
-    <a class="sidebar-nav-item" href="{{ site.author.linkedin }}">LinkedIn</a>
-    <a class="sidebar-nav-item" href="{{ site.author.url }}">GitHub Profile</a>
-    <a class="sidebar-nav-item" href="{{ site.author.twitter }}">Twitter</a>
+    <!--<a class="sidebar-nav-item" href="{{ site.author.linkedin }}">LinkedIn</a>-->
+    <!--<a class="sidebar-nav-item" href="{{ site.author.url }}">GitHub Profile</a>-->
+    <!--<a class="sidebar-nav-item" href="{{ site.author.twitter }}">Twitter <i class="fab fa-twitter"></i></a>-->
     <!--<span class="sidebar-nav-item">Currently v{{ site.version }}</span>-->
   </nav>
+
+<div id="social-media" style="font-size: xx-large;padding-left: 1.5rem;padding-right: 1.5rem;">
+     <a href="{{ site.author.linkedin }}" title="LinkedIn" rel="me"><i class="fa fa-linkedin-square"></i></a>
+</div>
+<!--<div class="sidebar-nav-item" id="social-media" style="font-size: xx-large;">-->
+     <!--<a href="mailto:jessica.reel@outlook.com" title="Email" rel="me"><i class="fa fa-envelope-square"></i></a>-->
+<div id="social-media" style="font-size: xx-large;padding-left: 1.5rem;padding-right: 1.5rem;">
+     <a href="{{ site.author.url }}" title="GitHub Profile" rel="me"><i class="fa fa-github-square"></i></a>
+</div>
+<div id="social-media" style="font-size: xx-large;padding-left: 1.5rem;padding-right: 1.5rem;">
+     <a href="{{ site.author.twitter }}" title="Twitter" rel="me"><i class="fa fa-twitter-square"></i></a>
+</div>
+<div id="social-media" style="font-size: xx-large;padding-left: 1.5rem;padding-right: 1.5rem;">
+     <a href="{{ site.url }}/atom.xml" title="RSS" rel="me"><i class="fa fa-rss-square"></i></a>
+</div>
 
   <div class="sidebar-item">
     <p>
