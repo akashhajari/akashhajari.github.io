@@ -2,7 +2,7 @@
 title:               Akash Hajari 
 tagline:             "Philomath, Researcher"
 description:         "Welcome to Akash Hajari's Code+Blog. I am philomath and am interested Artificial Intelligence."
-url:                 https://akashhajari.github.io/
+url:                 https://akashhajari.github.io
 baseurl:             ''
 paginate:            5
 permalink:           pretty
