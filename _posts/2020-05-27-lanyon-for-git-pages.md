@@ -4,7 +4,7 @@ title: Lanyon for Github Pages
 ---
 
 Github Pages provide awesome provision for hosting your blog, personal website, etc.
-There are many cool themes. I found Lanyon as cool theme. It proides information/blog first with toggling sidebar.
+There are many themes. I found Lanyon as cool theme. It proides information/blog first with toggling sidebar.
 
 ### First part lets install jekyll in you desktop. 
 I am using Ubuntu 16.04.
@@ -31,6 +31,7 @@ Clone the [Lanyon Github repo](https://github.com/poole/lanyon.git)
 * You need to check _config.yml file, _posts folder for writting your posts :) . For customisation you can check index.html, includes folder, etc. Don’t forget to read README.md.
 * You can make custom changes in 
 * Then you you can upload the all the content to your github repository where you would be publishing your static site. There are plenty og these tutorials available on this.
+* Dont forget to exclude Gemfile and Gemfile.lock while uploading which might cause disturbed view.
 
 Thanks!
 
