@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Lanyon for Github Pages &middot; Akash Hajari
+    
+  </title>
+
+  
+  <link rel="canonical" href="http://localhost:4000/2020/05/27/lanyon-for-git-pages/">
+  
+
+  <link rel="stylesheet" href="http://localhost:4000/public/css/poole.css">
+  <link rel="stylesheet" href="http://localhost:4000/public/css/syntax.css">
+  <link rel="stylesheet" href="http://localhost:4000/public/css/lanyon.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="http://localhost:4000/public/favicon.ico">
+
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="http://localhost:4000/atom.xml">
+
+  
+</head>
+
+
+  <body class="theme-base-0d">
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox" >
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>Welcome to Akash Hajari's Code+Blog. I am philomath and am interested Artificial Intelligence.</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="http://localhost:4000/">Home</a>
+
+    
+
+    
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="http://localhost:4000/about/">About</a>
+        
+      
+    
+      
+    
+
+    <!--<a class="sidebar-nav-item" href="/archive/v.zip">Download</a>-->
+    <a class="sidebar-nav-item" href="https://in.linkedin.com/in/akash-hajari-b7aa9234">LinkedIn</a>
+    <a class="sidebar-nav-item" href="https://www.github.com/akashhajari">GitHub Profile</a>
+    <a class="sidebar-nav-item" href="https://www.twitter.com/akash_hajari">Twitter</a>
+    <!--<span class="sidebar-nav-item">Currently v</span>-->
+  </nav>
+
+  <div class="sidebar-item">
+    <p>
+      &copy; 2020. All rights reserved.
+    </p>
+  </div>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">Akash Hajari</a>
+            <small>Philomath, Researcher</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="post">
+  <h1 class="post-title">Lanyon for Github Pages</h1>
+  <span class="post-date">27 May 2020</span>
+  <p>Github Pages provide awesome provision for hosting your blog, personal website, etc.
+There are many cool themes. I found Lanyon as cool theme. It proides information/blog first with toggling sidebar.</p>
+
+<h3 id="first-part-lets-install-jekyll-in-you-desktop">First part lets install jekyll in you desktop.</h3>
+<p>I am using Ubuntu 16.04.
+Update Ruby to 2.4 or later. Ubuntu16.04 by dafalut ships with 2.2 but has maximum support for 2.4 :</p>
+<ul>
+  <li><code class="highlighter-rouge">sudo apt-add-repository ppa:brightbox/ruby-ng</code></li>
+  <li><code class="highlighter-rouge">sudo apt-get update</code></li>
+  <li><code class="highlighter-rouge">sudo apt-get install ruby2.4</code></li>
+  <li><code class="highlighter-rouge">sudo apt-get install ruby`ruby -e 'puts RUBY_VERSION[/\d+\.\d+/]'`-dev</code></li>
+  <li><code class="highlighter-rouge">sudo gem update --system</code></li>
+  <li><code class="highlighter-rouge">echo '# Install Ruby Gems to ~/gems' &gt;&gt; ~/.bashrc</code></li>
+  <li><code class="highlighter-rouge">echo 'export GEM_HOME="$HOME/gems"' &gt;&gt; ~/.bashrc</code></li>
+  <li><code class="highlighter-rouge">echo 'export PATH="$HOME/gems/bin:$PATH"' &gt;&gt; ~/.bashrc</code></li>
+  <li><code class="highlighter-rouge">source ~/.bashrc</code></li>
+  <li><code class="highlighter-rouge">gem install jekyll bundler</code></li>
+</ul>
+
+<h3 id="then-its-time-to-use-theme">Then its time to use theme.</h3>
+<p>Clone the <a href="https://github.com/poole/lanyon.git">Lanyon Github repo</a></p>
+<ul>
+  <li>There no default gemfile by default in its <a href="https://github.com/poole/lanyon.git">Github repo</a>. So, I took one from <a href="https://github.com/poole/poole.git">Poole Github repository</a> and copied it there.</li>
+  <li><code class="highlighter-rouge">bundle install</code></li>
+  <li>If there are still error regarding sass-converter
+<code class="highlighter-rouge">gem install jekyll jekyll-gist jekyll-sitemap jekyll-seo-tag jekyll-paginate  jekyll-sass-converter</code></li>
+  <li><code class="highlighter-rouge">bundle exec jekyll serve</code></li>
+  <li>Cool! Access you site locally at http://127.0.0.1:4000/</li>
+  <li>You need to check _config.yml file, _posts folder for writting your posts :) . For customisation you can check index.html, includes folder, etc. Don’t forget to read README.md.</li>
+  <li>You can make custom changes in</li>
+  <li>Then you you can upload the all the content to your github repository where you would be publishing your static site. There are plenty og these tutorials available on this.</li>
+</ul>
+
+<p>Thanks!</p>
+
+<p>Let me know if you have any questions or feedback on <a href="https://www.twitter.com/akash_hajari">Twitter</a> or <a href="https://in.linkedin.com/in/akash-hajari-b7aa9234">LinkedIn</a></p>
+
+</div>
+
+
+
+      </div>
+    </div>
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script src='/public/js/script.js'></script>
+  </body>
+</html>

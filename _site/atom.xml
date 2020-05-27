@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>Akash Hajari</title>
+ <link href="http://localhost:4000/atom.xml" rel="self"/>
+ <link href="http://localhost:4000/"/>
+ <updated>2020-05-27T20:23:07+05:30</updated>
+ <id>http://localhost:4000</id>
+ <author>
+   <name>Akash Hajari</name>
+   <email></email>
+ </author>
+
+ 
+ <entry>
+   <title>Lanyon for Github Pages</title>
+   <link href="http://localhost:4000/2020/05/27/lanyon-for-git-pages/"/>
+   <updated>2020-05-27T00:00:00+05:30</updated>
+   <id>http://localhost:4000/2020/05/27/lanyon-for-git-pages</id>
+   <content type="html">&lt;p&gt;Github Pages provide awesome provision for hosting your blog, personal website, etc.
+There are many cool themes. I found Lanyon as cool theme. It proides information/blog first with toggling sidebar.&lt;/p&gt;
+
+&lt;h3 id=&quot;first-part-lets-install-jekyll-in-you-desktop&quot;&gt;First part lets install jekyll in you desktop.&lt;/h3&gt;
+&lt;p&gt;I am using Ubuntu 16.04.
+Update Ruby to 2.4 or later. Ubuntu16.04 by dafalut ships with 2.2 but has maximum support for 2.4 :&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo apt-add-repository ppa:brightbox/ruby-ng&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo apt-get update&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo apt-get install ruby2.4&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo apt-get install ruby`ruby -e 'puts RUBY_VERSION[/\d+\.\d+/]'`-dev&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo gem update --system&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;echo '# Install Ruby Gems to ~/gems' &amp;gt;&amp;gt; ~/.bashrc&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;echo 'export GEM_HOME=&quot;$HOME/gems&quot;' &amp;gt;&amp;gt; ~/.bashrc&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;echo 'export PATH=&quot;$HOME/gems/bin:$PATH&quot;' &amp;gt;&amp;gt; ~/.bashrc&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;source ~/.bashrc&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;gem install jekyll bundler&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;then-its-time-to-use-theme&quot;&gt;Then its time to use theme.&lt;/h3&gt;
+&lt;p&gt;Clone the &lt;a href=&quot;https://github.com/poole/lanyon.git&quot;&gt;Lanyon Github repo&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;There no default gemfile by default in its &lt;a href=&quot;https://github.com/poole/lanyon.git&quot;&gt;Github repo&lt;/a&gt;. So, I took one from &lt;a href=&quot;https://github.com/poole/poole.git&quot;&gt;Poole Github repository&lt;/a&gt; and copied it there.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;bundle install&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;If there are still error regarding sass-converter
+&lt;code class=&quot;highlighter-rouge&quot;&gt;gem install jekyll jekyll-gist jekyll-sitemap jekyll-seo-tag jekyll-paginate  jekyll-sass-converter&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;bundle exec jekyll serve&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Cool! Access you site locally at http://127.0.0.1:4000/&lt;/li&gt;
+  &lt;li&gt;You need to check _config.yml file, _posts folder for writting your posts :) . For customisation you can check index.html, includes folder, etc. Don’t forget to read README.md.&lt;/li&gt;
+  &lt;li&gt;You can make custom changes in&lt;/li&gt;
+  &lt;li&gt;Then you you can upload the all the content to your github repository where you would be publishing your static site. There are plenty og these tutorials available on this.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Thanks!&lt;/p&gt;
+
+&lt;p&gt;Let me know if you have any questions or feedback on &lt;a href=&quot;https://www.twitter.com/akash_hajari&quot;&gt;Twitter&lt;/a&gt; or &lt;a href=&quot;https://in.linkedin.com/in/akash-hajari-b7aa9234&quot;&gt;LinkedIn&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+
+</feed>
