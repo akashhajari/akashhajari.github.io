@@ -1,0 +1,24 @@
+# Setup
+title:               Akash Hajari 
+tagline:             "Philomath, Researcher"
+description:         "Welcome to Akash Hajari's Code+Blog. I am philomath and am interested Artificial Intelligence."
+url:                 http://akashhajari.github.io
+baseurl:             ''
+paginate:            5
+permalink:           pretty
+
+# About/contact
+author:
+  name:              Akash Hajari
+  url:               https://www.github.com/akashhajari
+  email:             
+  linkedin:          https://in.linkedin.com/in/akash-hajari-b7aa9234
+  twitter:           https://www.twitter.com/akash_hajari
+
+# Gems
+plugins:
+  - jekyll-paginate
+
+# Custom vars
+version:             #1.1.0
+google_analytics_id: #UA-XXXX-Y
