@@ -1,7 +1,7 @@
 # Setup
 title:               Akash Hajari 
 tagline:             "Philomath, Researcher"
-description:         "Welcome to Akash Hajari's Code+Blog. I am philomath and am interested in Artificial Intelligence."
+description:         "Welcome to Akash Hajari's Code+Blog. I am philomath and am interested Artificial Intelligence."
 url:                 https://akashhajari.github.io
 baseurl:             ''
 paginate:            5
@@ -22,3 +22,14 @@ plugins:
 # Custom vars
 version:             #1.1.0
 google_analytics_id: #UA-XXXX-Y
+
+collections:
+  pages:
+    output: true
+    permalink: /:name
+  posts:
+    output: true
+    permalink: /blog/:slug
+  projects:
+    output: true
+    permalink: /project/:slug
