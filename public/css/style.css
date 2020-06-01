@@ -1,0 +1,60 @@
+.user {
+	 width: 2.5em;
+            height: 2.5em;
+            overflow: hidden;
+            padding: 3px;
+}
+
+#gh-comments-list img {
+                border-radius: 50%;
+                border: 3px solid #fff;
+                box-shadow: 0 0 3px #aaa;
+		max-width:100%;
+            }
+#gh-comments-list li .comment-content {
+    padding: 0 1.5em;
+    font-size: large;
+}
+
+#gh-comments-list li {
+    margin: 0;
+    padding: 1.5em 0;
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid #aaa;
+}
+
+#gh-comments-list li>a.comment-url {
+    width: 100%;
+    text-align: right;
+    font-size: .6em;
+    opacity: .5;
+}
+
+
+#gh-comments-list a.user, #gh-comments-list a.comment-url {
+    text-decoration: none !important;
+    box-shadow: none !important;
+    border-bottom: none !important;
+}
+
+
+#leave-a-comment {
+    background: #268bd20d;
+    color: #c1c1c1;
+    padding: 1rem;
+    font-size: 1.0rem;
+
+    a {
+        color: #fff;
+        border-bottom-color: #fff;
+        outline-color: #fff;
+    }
+}
+
+#no-comments-found {
+    font-size: .8rem;
+    display: none;
+}
+                                                                                                                             1,1           Top
+:
