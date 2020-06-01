@@ -4,6 +4,9 @@
 
 <!-- Toggleable sidebar -->
 <div class="sidebar" id="sidebar">
+  <div class="sidebar-logo" style="align:center">
+      <img src="{{ secrets.PROFILE_IMAGE }}" />
+  </div>
   <div class="sidebar-item">
     <p>{{ site.description }}</p>
   </div>
@@ -34,17 +37,17 @@
 
 <div id="social-media" style="font-size: xx-large;padding-left: 1.5rem;padding-right: 1.5rem;">
      <a href="{{ site.author.linkedin }}" title="LinkedIn" rel="me"><i class="fa fa-linkedin-square"></i></a>
-</div>
+<!--</div>-->
 <!--<div class="sidebar-nav-item" id="social-media" style="font-size: xx-large;">-->
      <!--<a href="mailto:jessica.reel@outlook.com" title="Email" rel="me"><i class="fa fa-envelope-square"></i></a>-->
-<div id="social-media" style="font-size: xx-large;padding-left: 1.5rem;padding-right: 1.5rem;">
+<!--<div id="social-media" style="font-size: xx-large;padding-left: 1.5rem;padding-right: 1.5rem;">-->
      <a href="{{ site.author.url }}" title="GitHub Profile" rel="me"><i class="fa fa-github-square"></i></a>
-</div>
-<div id="social-media" style="font-size: xx-large;padding-left: 1.5rem;padding-right: 1.5rem;">
+<!--</div>-->
+<!--<div id="social-media" style="font-size: xx-large;padding-left: 1.5rem;padding-right: 1.5rem;">-->
      <a href="{{ site.author.twitter }}" title="Twitter" rel="me"><i class="fa fa-twitter-square"></i></a>
-</div>
-<div id="social-media" style="font-size: xx-large;padding-left: 1.5rem;padding-right: 1.5rem;">
-     <a href="{{ site.url }}/atom.xml" title="RSS" rel="me"><i class="fa fa-rss-square"></i></a>
+<!--</div>-->
+<!--<div id="social-media" style="font-size: xx-large;padding-left: 1.5rem;padding-right: 1.5rem;">-->
+     <a link rel= "alternate" type="application/atom+xml" href="{{ site.url }}/atom.xml" title="Atom Feed" rel="me"><i class="fa fa-rss-square"></i></a>
 </div>
 
   <div class="sidebar-item">
