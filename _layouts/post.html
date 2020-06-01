@@ -8,6 +8,12 @@ layout: default
   {{ content }}
 </div>
 
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+{% if page.comments_id %}
+  {% include comments.html %}
+{% endif %}
+</body>
+
 {% if site.related_posts.size >= 1 %}
 <div class="related">
   <h2>Related posts</h2>
